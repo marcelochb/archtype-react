@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 // import reportWebVitals from './reportWebVitals';
-import { App } from './App';
 import { TodoListPage } from './features/todo/infra/presenter/list/pages/todo.list.page';
 
 // const App: React.FC = () => {

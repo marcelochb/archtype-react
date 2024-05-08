@@ -35,8 +35,7 @@ module.exports = {
       },
       {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
-        // use: [stylesHandler,'style-loader', 'css-loader', 'postcss-loader'],
+        use: [stylesHandler,'style-loader', 'css-loader', 'postcss-loader'],
       },
     ],
   },
@@ -46,6 +45,6 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
-    // clean: true,
+    clean: true,
   },
 };
