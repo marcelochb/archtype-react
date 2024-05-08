@@ -1,8 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { myContainer } from './inversity.config';
+import { Warrior } from './interfaces';
+import { TYPES } from './types';
 
-function App() {
+export const App: React.FC = () => {
+    const ninja = myContainer.get<Warrior>(TYPES.Warrior);
+  console.log(ninja.fight());
   return (
     <div className="App">
       <header className="App-header">
@@ -23,4 +28,3 @@ function App() {
   );
 }
 
-export default App;
