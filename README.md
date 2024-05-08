@@ -1,15 +1,34 @@
-# 🚀 Welcome to your new awesome project!
+# Archtype para React.
 
-This project has been created using **webpack-cli**, you can now run
+### Tecnologias usadas
 
-```
-npm run build
-```
+- React
+- Typescript
+- Formik
+- Axios
+- Inversify (inject dependency to clean architecture)
+- TailWind
 
-or
+### Estrutura do projeto
 
-```
-yarn build
-```
-
-to bundle your application
+- src =>
+  - core => Configurações globais.
+    - config =>
+    - service => clientes api
+    - constants =>
+    - interfaces => interfaces globas
+    - componentes =>
+  - features =>
+    - todo
+        - dtos => modelagem com regras de negócio
+        - infra
+            - binds
+            - presenter
+                - create
+                    - controllers
+                    - pages
+                    - componentes
+                - list
+        - mocks
+        - usecases
+- test => testes unitários
