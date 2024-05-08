@@ -5,10 +5,10 @@ export default {
   testEnvironment: 'jsdom',
   moduleNameMapper: {
     '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
-      '<rootDir>/tests/__mocks__/file.mock.ts',
-    '\\.(css|less)$': '<rootDir>/tests/__mocks__/style.mock.ts',
+      '<rootDir>/test/__mocks__/file.mock.ts',
+    '\\.(css|less)$': '<rootDir>/test/__mocks__/style.mock.ts',
   },
-  setupFilesAfterEnv: ['<rootDir>/tests/setup.tests.ts'],
+  setupFilesAfterEnv: ['<rootDir>/test/setup.tests.ts'],
   collectCoverageFrom: [
     '**/*.{ts,tsx}', 
     '!**/*.d.ts', 

@@ -25,7 +25,7 @@ export const useTodoListController:IControllerGetData<TodoDto[]> = () => {
             }
           };
           fetchUser();
-        }, [useCase]
+        }, []
       );
 
 

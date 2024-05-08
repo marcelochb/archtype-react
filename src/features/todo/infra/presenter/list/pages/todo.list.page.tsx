@@ -3,9 +3,9 @@ import { useTodoListController } from "../controller/todo.list.controller";
 
 export const TodoListPage: React.FC = () => {
     const {data, loading, error} = useTodoListController();
+    if (loading) return <p>Loading...</p>;
     return (
         <div>
-            {loading && <p>Loading...</p>}
             {error && <p>Tivemos um problema...</p>}
             {data && data.map(todo => (
                 <div key={todo.id}>

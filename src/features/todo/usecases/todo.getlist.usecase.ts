@@ -4,10 +4,6 @@ import { ITodoGetListUsecase } from "./todo.usecases.interfaces";
 import { TodoDto } from "../dtos/todo.dto";
 import { todoListMock } from "../mocks";
 import { InjectConstant, type IApiClient } from "../../../core";
-// interface IApiClient {
-//     get({url, mockResponse}:IGetProps): Promise<any>;
-//     post({url,body, mockResponse}:IPostProps): Promise<void>;
-// }
 
 @injectable()
 class TodoGetListUsecase implements ITodoGetListUsecase {
