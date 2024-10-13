@@ -1,4 +1,4 @@
-# Archtype para React.
+# Archtype para React
 
 ### Tecnologias usadas
 
